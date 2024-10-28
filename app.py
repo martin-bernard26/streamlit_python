@@ -8,3 +8,4 @@ if masukan!="":
   kumpulkan = [int(i) for i in masukan.split(",")]
   data = pd.DataFrame({'Nilai':kumpulkan})
   st.table(data)
+  st.write(data.describe())
